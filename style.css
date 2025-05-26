@@ -4,19 +4,12 @@
   --color-gray: #6c757d;
   --color-light-gray: #e0e6ed;
   --color-white: #ffffff;
-
-  --color-primary: #0d6efd; /* Bootstrap primary blue */
-  --color-secondary: #6c757d; /* Bootstrap secondary gray */
+  --color-primary: #0d6efd;
+  --color-secondary: #6c757d;
   --color-accent-blue: #1a73e8;
   --color-light-blue: #eaf1ff;
   --color-dark-blue: #0b3d91;
-
-  --color-success: #198754;
-  --color-warning: #ffc107;
   --color-danger: #dc3545;
-  --color-info: #0dcaf0;
-  --color-light: #f8f9fa;
-  --color-dark: #212529;
 }
 /* ==================== CSS RESET & BASE ==================== */
 * {
