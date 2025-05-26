@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./auth.css" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-part2">
+        <div class="login-part2-content">
+          <h1>Hello There</h1>
+          <p>Already have an account?</p>
+          <a href="index.html" class="login-here">Login here</a>
+        </div>
+      </div>
+      <div class="signup-part2">
+        <form id="signup-form">
+          <h1>Create an Account</h1>
+          <div class="names">
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              placeholder="&#xf007; First name"
+              style="
+                font-family: 'Font Awesome 6 Free', sans-serif;
+                font-weight: 900;
+              "
+            />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              placeholder="&#xf007; Last name"
+              style="
+                font-family: 'Font Awesome 6 Free', sans-serif;
+                font-weight: 900;
+              "
+            />
+          </div>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="&#xf234; Username"
+            style="
+              font-family: 'Font Awesome 6 Free', sans-serif;
+              font-weight: 900;
+            "
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="&#xf023; Password"
+            style="
+              font-family: 'Font Awesome 6 Free', sans-serif;
+              font-weight: 900;
+            "
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <script src="./loginScript.js"></script>
+  </body>
+</html>

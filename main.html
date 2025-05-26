@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div>
+        <h2>
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/chase-bank.png"
+            alt="chase-bank"
+          />
+        </h2>
+        <nav>
+          <a href="./main.html" class="active"
+            ><ion-icon name="home-outline"></ion-icon> <span>Dashboard</span></a
+          >
+          <a href="#"
+            ><ion-icon name="swap-horizontal-outline"></ion-icon>
+            <span>Transactions</span></a
+          >
+          <a href="#"
+            ><ion-icon name="card-outline"></ion-icon> <span>Card Center</span>
+          </a>
+          <a href="#"
+            ><ion-icon name="people-outline"></ion-icon> <span>Contacts</span>
+          </a>
+          <a href="#"
+            ><ion-icon name="wallet-outline"></ion-icon>
+            <span>E-Wallet Center</span>
+          </a>
+          <a href="#"
+            ><ion-icon name="bar-chart-outline"></ion-icon>
+            <span> Reports</span></a
+          >
+        </nav>
+      </div>
+      <!-- <nav>
+        <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        <a href="#"
+          ><ion-icon name="help-circle-outline"></ion-icon> Help Center</a
+        >
+        <a href="./Login.html"
+          ><ion-icon name="log-out-outline"></ion-icon> Log Out</a
+        >
+      </nav> -->
+    </nav>
+
+    <div class="main">
+      <nav class="header">
+        <div>
+          <h1 id="welcome-text">Welcome back to Chase</h1>
+        </div>
+        <div class="user-info">
+          <div class="user-details-container">
+            <img
+              src="https://i.pravatar.cc/40"
+              alt="User"
+              class="user-details-image"
+            />
+            <button class="user-details-button">
+              <img src="https://i.pravatar.cc/40" alt="User" />
+              <h3 id="user-name"></h3>
+              <ion-icon name="chevron-down-outline">.</ion-icon>
+            </button>
+          </div>
+          <div class="user-menu hidden" id="userMenu">
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon>
+              <span>Settings</span></a
+            >
+            <a href="#"
+              ><ion-icon name="help-circle-outline"></ion-icon>
+              <span>Help Center</span></a
+            >
+            <a href="./index.html"
+              ><ion-icon name="log-out-outline"></ion-icon>
+              <span>Log Out</span></a
+            >
+          </div>
+          <div class="user-menu2 hidden" id="userMenu2">
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon>
+              <span>Settings</span></a
+            >
+            <a href="#"
+              ><ion-icon name="help-circle-outline"></ion-icon>
+              <span>Help Center</span></a
+            >
+            <a href="./index.html"
+              ><ion-icon name="log-out-outline"></ion-icon>
+              <span>Log Out</span></a
+            >
+          </div>
+        </div>
+        <div class="mobile-popup">
+          <button class="mobile-menu-button" id="mobileMenuButton">☰</button>
+          <div class="mobile-menu" id="mobileMenu">
+            <a href="#"><ion-icon name="home-outline"></ion-icon> Dashboard</a>
+            <a href="#"
+              ><ion-icon name="swap-horizontal-outline"></ion-icon>
+              Transactions</a
+            >
+            <a href="#"
+              ><ion-icon name="card-outline"></ion-icon> Card Center</a
+            >
+            <a href="#"><ion-icon name="people-outline"></ion-icon> Contacts</a>
+            <a href="#"
+              ><ion-icon name="wallet-outline"></ion-icon> E-Wallet Center</a
+            >
+            <a href="#"
+              ><ion-icon name="bar-chart-outline"></ion-icon> Reports</a
+            >
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon> Settings</a
+            >
+            <a href="#"
+              ><ion-icon name="help-circle-outline"></ion-icon> Help Center</a
+            >
+            <a href="./index.html"
+              ><ion-icon name="log-out-outline"></ion-icon> Log Out</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div class="grid">
+        <div class="card debit-card-card" id="card">
+          <div class="flip-container" id="flipCard">
+            <div class="flipper">
+              <div class="front">
+                <div class="bank-card">
+                  <h3 class="bank">CHASE</h3>
+                  <img src="./chip.png" class="chip" alt="chip" />
+                  <img
+                    src="./contactless-indicator.png"
+                    class="indicator"
+                    alt="contactless"
+                  />
+                  <h3 class="number">4100 1234 5678 9010</h3>
+                  <h5 class="card-holder">
+                    <span>card holder</span><br />
+                    <span id="card-name"></span>
+                  </h5>
+                  <h5 class="valid"><span>expiry date</span><br />20/30</h5>
+                  <img src="./visa.png" class="logo" alt="visa" />
+                </div>
+              </div>
+              <div class="back">
+                <div class="bank-card-back">
+                  <div class="card-back">
+                    <div class="card-strip"></div>
+                    <div class="card-signature"></div>
+                    <div class="card-ccv">303</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card total-balance-card">
+          <h3>Your Total Balance</h3>
+          <h1 class="balance"></h1>
+          <small>December 21, 2020 - 02:00 PM</small>
+          <div class="balance-buttons">
+            <button type="button" id="transferBtn">
+              <div>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+              <div>Send</div>
+            </button>
+            <button type="button" id="topup">
+              <div>
+                <ion-icon name="add-outline"></ion-icon>
+              </div>
+              <div>Topup</div>
+            </button>
+            <button type="button" id="more">
+              <div>
+                <ion-icon name="apps-outline"></ion-icon>
+              </div>
+              <div>More</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="card transactions">
+          <h3>Recent Transactions</h3>
+          <ul></ul>
+        </div>
+
+        <div class="card gauge">
+          <!-- <h3>Expenses Instead</h3>
+          <div class="value">85.5%</div>
+          <p>Normal Level</p>
+          <small>Total Exp: $1,820.80</small> -->
+        </div>
+      </div>
+    </div>
+
+    <dialog id="modal" class="modal">
+      <div class="modal-content">
+        <h3>Transfer / Withdraw</h3>
+        <label for="amount">Amount</label>
+        <input type="number" id="transfer-amount" placeholder="Enter amount" />
+
+        <label for="account">Account Name</label>
+        <input
+          type="text"
+          id="transfer-username"
+          placeholder="Enter account name"
+        />
+
+        <div class="modal-actions">
+          <button type="button" id="confirm-transfer" class="confirm">
+            Confirm
+          </button>
+          <button type="button" id="close-modal" class="cancel">Cancel</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="topup-modal" class="modal">
+      <div class="modal-content">
+        <h3>Top Up</h3>
+        <label for="topup-amount">Amount</label>
+        <input type="number" id="topup-amount" placeholder="Enter amount" />
+        <div class="modal-actions">
+          <button type="button" id="confirm-topup" class="confirm">
+            Confirm
+          </button>
+          <button type="button" id="cancel-topup" class="cancel">Cancel</button>
+        </div>
+      </div>
+    </dialog>
+    <script src="./script.js"></script>
+  </body>
+</html>
